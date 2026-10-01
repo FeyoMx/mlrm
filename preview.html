@@ -1,0 +1,43 @@
+<!-- @dsCard height=320 -->
+<div style="width:960px;height:320px;background:var(--surface);overflow:hidden">
+  <style>
+    .g{fill:var(--surface)}
+    .b{fill:var(--brand)}
+    .a{fill:var(--accent)}
+    .k{fill:var(--ink)}
+    .t{fill:var(--brand-tint)}
+    .name{font-family:var(--font-display);font-weight:600;font-size:64px;fill:var(--ink)}
+    .tag{font-family:var(--font-sans);font-weight:500;font-size:14px;fill:var(--ink-muted)}
+  </style>
+  <svg width="960" height="320" viewBox="0 0 960 320" xmlns="http://www.w3.org/2000/svg">
+    <!--
+      blocks: brand 422px, accent 221px, ink 120px, brand-tint 197px, full value, unequal widths, flush across the top band (108px).
+      arrangement: top-band skeleton, because the full name is too wide for the right-hand zone even at 64px.
+      pattern: discs on the band's lower seam, diameters 2x radius-lg (56), radius-md (32), radius-sm (16): soft rounded shapes echo the system's signature large radii.
+      steps and radii: radius-sm 8, radius-md 16, radius-lg 28; text inset 48 (space-5 plus space-2), gaps space-4 24.
+    -->
+    <rect class="g" x="0" y="0" width="960" height="320"/>
+    <rect class="b" x="0" y="0" width="422" height="108"/>
+    <rect class="a" x="422" y="0" width="221" height="108"/>
+    <rect class="k" x="643" y="0" width="120" height="108"/>
+    <rect class="t" x="763" y="0" width="197" height="108"/>
+    <circle class="b" cx="48" cy="108" r="28"/>
+    <circle class="a" cx="116" cy="108" r="16"/>
+    <circle class="t" cx="176" cy="108" r="8"/>
+    <circle class="a" cx="256" cy="108" r="28"/>
+    <circle class="b" cx="324" cy="108" r="16"/>
+    <circle class="t" cx="384" cy="108" r="8"/>
+    <circle class="b" cx="464" cy="108" r="28"/>
+    <circle class="a" cx="532" cy="108" r="16"/>
+    <circle class="t" cx="592" cy="108" r="8"/>
+    <circle class="b" cx="672" cy="108" r="28"/>
+    <circle class="a" cx="740" cy="108" r="16"/>
+    <circle class="k" cx="800" cy="108" r="8"/>
+    <circle class="a" cx="880" cy="108" r="28"/>
+    <circle class="b" cx="936" cy="108" r="16"/>
+    <text class="name" x="48" y="188">Dra. Martha</text>
+    <text class="name" x="48" y="247">Ramírez Montiel</text>
+    <text class="tag" x="48" y="281">Ginecología · Apan · Texcoco · Pachuca</text>
+  </svg>
+</div>
+<script>/* static cover */</script>

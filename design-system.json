@@ -1,0 +1,14 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": { "v": 1, "at": "2026-10-01T20:28:46Z" },
+  "title": "Dra. Martha Ramírez Montiel",
+  "namespace": "DraMarthaRamirez",
+  "libraries": [],
+  "sections": {},
+  "groups": [],
+  "assetGroups": {},
+  "blobs": {},
+  "docs": { "readme": "project/README.md", "sections": [] },
+  "lastChange": { "by": "FeyoMx", "via": "Claude (Cowork)", "at": "2026-10-01T20:28:46Z", "note": "Primera versión: paleta, tipografía, espaciado, radios, sombras y portada." }
+}
