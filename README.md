@@ -64,3 +64,10 @@ La portada autorizada fue generada con IA y no se presenta como fotografía real
 - Imagen completa sin rostro visible, proporciones originales, carga correcta; WebP de 83 KB aproximadamente.
 - Sin errores ni advertencias de consola durante la revisión. `git diff --check` sin errores.
 - Movimiento reducido implementado mediante media query; su activación por preferencia del sistema no se emuló en el navegador disponible. Los destinos externos de mapas y WhatsApp no se abrieron ni se enviaron mensajes.
+
+### Despliegue con GitHub Pages
+
+El flujo `.github/workflows/pages.yml` prepara únicamente `index.html`, `styles.css`, `app.js`, `config.js` y `assets/` como artefacto público; no incluye README, brief, AGENTS ni imágenes originales. Se ejecuta al cambiar archivos del sitio en `main` o manualmente desde Actions. Usa el entorno `github-pages` y requiere configurar Pages con origen GitHub Actions.
+
+Intento del 1 de octubre de 2026: GitHub rechazó habilitar Pages (HTTP 422) porque el plan actual no admite Pages para este repositorio privado. El sitio no se desplegó. Se requiere un plan compatible o autorización expresa para cambiar la visibilidad del repositorio; hacerlo público también expondría documentos internos e historial. La autorización posterior del usuario permitió hacer público el repositorio y habilitar Pages. URL asignada: https://feyomx.github.io/mlrm/.
+
