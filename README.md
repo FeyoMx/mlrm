@@ -38,7 +38,7 @@ Abra una terminal en este repositorio y ejecute `python -m http.server 8000 --bi
 
 ### WhatsApp
 
-En `config.js`, sustituya el valor vacío de `whatsapp` exclusivamente por el número oficial confirmado: `+` y entre 8 y 15 dígitos, incluyendo el código de país, sin espacios ni guiones. No se deduce ni añade prefijo. Un valor vacío o inválido muestra “Contacto por WhatsApp próximamente” y no genera enlace. Todos los CTA comparten la función `whatsappUrl` y la sede seleccionada. Una solicitud no confirma una cita. No se recopilan datos personales ni clínicos.
+El usuario confirmó el número oficial de WhatsApp Business y su código de país (México) el 11 de octubre de 2026: `+527711249845`. Está configurado en `config.js`. Para cambiar `whatsapp`, use exclusivamente un número oficial confirmado: `+` y entre 8 y 15 dígitos, incluyendo el código de país, sin espacios ni guiones. No se deduce ni añade prefijo. Un valor vacío o inválido muestra “Contacto por WhatsApp próximamente” y no genera enlace. Todos los CTA comparten la función `whatsappUrl` y la sede seleccionada. Una solicitud no confirma una cita. No se recopilan datos personales ni clínicos.
 
 ### Imágenes
 
@@ -46,7 +46,7 @@ La portada autorizada fue generada con IA y no se presenta como fotografía real
 
 ### Decisiones y pendientes internos
 
-- Confirmar el número oficial de WhatsApp y responsables de atención.
+- Confirmar responsables y horarios de atención de WhatsApp; el número oficial ya está confirmado.
 - Validar horarios: Apan se superpone con Pachuca los martes y miércoles y con Texcoco los viernes. Se muestran los horarios recibidos con cita previa, sin agenda ni espacios reservables.
 - Aprobar precios y componentes de paquetes; aclarar la promoción de mayo y su año. Ninguno se publica.
 - Verificar y aprobar credenciales y experiencia; no se publican afirmaciones del onboarding.

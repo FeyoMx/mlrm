@@ -1,0 +1,4 @@
+Publicación de sedes — 11 de octubre de 2026
+Generada con la herramienta integrada image_gen. Original conservado.
+Pendiente interno: validar horarios superpuestos antes de publicar. Se usaron los horarios recibidos, sin deducir disponibilidad.
+Dirección visual del prompt: publicación vertical 4:5, marfil, rosa vino y lavanda, tipografía editorial, tres secciones legibles con las direcciones y horarios exactos de config.js, nombre de la doctora y CTA al WhatsApp 771 124 9845. Sin personas, precios, credenciales ni QR.

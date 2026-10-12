@@ -1,7 +1,7 @@
 export const site = {
   name: 'Dra. Martha Laura Ramírez Montiel',
-  // Número oficial confirmado en formato internacional, por ejemplo + seguido de dígitos. Vacío hasta validación.
-  whatsapp: '',
+  // Número y código de país confirmados por el usuario el 11 de octubre de 2026.
+  whatsapp: '+527711249845',
   locations: [
     { name: 'Apan', place: 'Clínica San Pablo', address: 'Ocampo Norte 1, Centro, Apan, Hidalgo.', hours: 'Lunes a viernes: 9:00–13:00 y 15:30–18:30.', map: 'https://share.google/35H4PicDbCe8kNF3K' },
     { name: 'Texcoco', place: 'Hospital Manedic', address: 'Avenida Emiliano Zapata 207, Santa Úrsula, Texcoco, Estado de México, C.P. 56150.', hours: 'Viernes: 17:00–20:00.', map: 'https://maps.app.goo.gl/LCyxPgfi8zwk2e2Z7' },
