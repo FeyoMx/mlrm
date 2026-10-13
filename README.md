@@ -28,6 +28,10 @@ Aún no hay set de iconos. Mientras tanto, nombra servicios y sedes con texto en
 
 Abra una terminal en este repositorio y ejecute `python -m http.server 8000 --bind 127.0.0.1`. Visite http://127.0.0.1:8000. No requiere instalación ni compilación. `preview.html` conserva la muestra original del sistema visual.
 
+En Windows también puede ejecutar `powershell -ExecutionPolicy Bypass -File .\iniciar.ps1`. El script detecta un Python funcional (incluido el runtime local de Codex cuando existe), sirve este repositorio y mantiene la terminal abierta hasta presionar Ctrl+C. Para otro puerto use `-Puerto 8001` y abra http://127.0.0.1:8001. Abrir `index.html` directamente como archivo no sustituye el servidor: la página carga módulos JavaScript mediante HTTP.
+
+Diagnóstico del 12 de octubre de 2026: el Python 3.13 del sistema falló al localizar su instalación; el servidor ejecutado dentro del aislamiento tampoco fue accesible desde el navegador. Con Python 3.12 del runtime y ejecución local fuera del aislamiento, la landing abrió correctamente en el puerto 8001 y mostró los 21 servicios.
+
 ### Archivos
 
 - `index.html`: contenido semántico, SEO, navegación y estructura.
@@ -35,6 +39,12 @@ Abra una terminal en este repositorio y ejecute `python -m http.server 8000 --bi
 - `config.js`: sedes, servicios, textos comunes y contacto.
 - `app.js`: menú móvil, selección sincronizada y enlaces de WhatsApp.
 - `assets/portada.webp`: versión optimizada de la portada autorizada; originales conservados.
+
+### Catálogo de servicios
+
+El catálogo de `config.js` contiene los 21 servicios solicitados por el usuario el 12 de octubre de 2026, sin duplicados. Se añadieron 13 a los 8 existentes, conservando el diseño y las descripciones administrativas. La vacunación contra VPH indica que las existencias y condiciones de aplicación están sujetas a confirmación. La interpretación de ultrasonidos de mamas y mastografías se ofrece durante la consulta para estudios que la paciente lleve consigo; su realización corresponde a un médico radiólogo en laboratorio o centro de diagnóstico. La disponibilidad de cada servicio se consulta por WhatsApp; no se atribuye disponibilidad específica a una sede.
+
+Verificación de esta actualización: módulo ejecutado con Node.js, 21 servicios únicos, mensajes de WhatsApp correspondientes a las tres sedes y contacto vacío sin enlace; `git diff --check` correcto. La revisión visual móvil y de escritorio de esta actualización quedó pendiente: el navegador integrado no pudo conectar al servidor local (timeout) y la comprobación HTTP desde Node.js recibió `EACCES`.
 
 ### WhatsApp
 
