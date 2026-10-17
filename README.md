@@ -77,6 +77,18 @@ La portada autorizada fue generada con IA y no se presenta como fotografía real
 
 ### Despliegue con GitHub Pages
 
+### Despliegue Docker en VPS
+
+El despliegue autorizado el 12 de octubre de 2026 usa `https://draramirezmontiel.fmxaiflows.online`, el directorio `/opt/mlrm` y el contenedor `mlrm-landing`. La configuración reproducible está en `deploy/compose.yaml` y `deploy/nginx.conf`; `deploy/site.conf` es el proxy HTTP inicial, que Certbot adapta para HTTPS en el VPS. El contenedor expone únicamente `127.0.0.1:8097`, con reinicio automático y comprobación de salud. Nginx del host termina HTTPS y redirige HTTP; Certbot gestiona el certificado.
+
+Para actualizar, transfiera solo `index.html`, `styles.css`, `app.js`, `config.js` y `assets/` a `/opt/mlrm/public`. Los documentos internos, originales, Git y credenciales no forman parte del sitio servido. Desde `/opt/mlrm`, use `docker compose up -d`, `docker compose ps` y `docker compose logs --tail=50` para operación. Los cambios de archivos públicos se reflejan mediante el volumen; los cambios de configuración Nginx del contenedor requieren `docker compose restart landing`. GitHub Pages continúa siendo un despliegue separado: un push a GitHub no actualiza automáticamente el VPS.
+
+#### Despliegue manual
+
+Por decisión del usuario, las actualizaciones del VPS se despliegan manualmente con el acceso SSH existente. Sincronizar el repositorio no actualiza este servidor. No se configuraron secretos de GitHub, acceso SSH adicional ni tareas periódicas para el VPS. Antes de actualizar, conserve una copia de `/opt/mlrm/public` y después compruebe HTTPS y la salud del contenedor.
+
+### Configuración de GitHub Pages
+
 El flujo `.github/workflows/pages.yml` prepara únicamente `index.html`, `styles.css`, `app.js`, `config.js` y `assets/` como artefacto público; no incluye README, brief, AGENTS ni imágenes originales. Se ejecuta al cambiar archivos del sitio en `main` o manualmente desde Actions. Usa el entorno `github-pages` y requiere configurar Pages con origen GitHub Actions.
 
 Intento del 1 de octubre de 2026: GitHub rechazó habilitar Pages (HTTP 422) porque el plan actual no admite Pages para este repositorio privado. El sitio no se desplegó. Se requiere un plan compatible o autorización expresa para cambiar la visibilidad del repositorio; hacerlo público también expondría documentos internos e historial. La autorización posterior del usuario permitió hacer público el repositorio y habilitar Pages. URL asignada: https://feyomx.github.io/mlrm/.
