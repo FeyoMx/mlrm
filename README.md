@@ -81,3 +81,11 @@ El flujo `.github/workflows/pages.yml` prepara únicamente `index.html`, `styles
 
 Intento del 1 de octubre de 2026: GitHub rechazó habilitar Pages (HTTP 422) porque el plan actual no admite Pages para este repositorio privado. El sitio no se desplegó. Se requiere un plan compatible o autorización expresa para cambiar la visibilidad del repositorio; hacerlo público también expondría documentos internos e historial. La autorización posterior del usuario permitió hacer público el repositorio y habilitar Pages. URL asignada: https://feyomx.github.io/mlrm/.
 
+
+### Identidad vectorial (17 de octubre de 2026)
+
+- `assets/branding/logo-completo.svg`: logo completo vectorial basado en el archivo SVG aportado por el usuario; retirados trazados en tonos marfil claro para permitir transparencia.
+- `assets/branding/monograma.svg`: símbolo vectorial independiente, utilizado como favicon.
+- La cabecera ahora usa el SVG completo; se conserva el texto alternativo accesible y el resto de la landing sin cambios funcionales.
+- No se han reemplazado las imágenes originales ni la portada. Se requiere revisión visual de los detalles del trazado y aprobación final de marca antes de tratar estos SVG como definitivos.
+- El PNG transparente aportado por el usuario no está incorporado a este commit; los SVG se usan para la web por ser escalables.

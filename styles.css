@@ -3,3 +3,8 @@
 @media(max-width:900px){.wrap{width:calc(100% - 48px)}.header{flex-wrap:wrap}.menu{display:block;border:1px solid var(--border);border-radius:var(--radius-sm);background:transparent;padding:var(--space-2) var(--space-3);color:var(--brand)}nav{display:none;width:100%;align-items:stretch;flex-direction:column;padding-block:var(--space-3)}nav.open{display:flex}nav>a{padding:var(--space-2)}.hero{padding-top:var(--space-5);grid-template-columns:1fr}.hero-aside{display:none}.section-heading,.location-layout,.faq-layout{grid-template-columns:1fr;gap:var(--space-4)}.section,.locations{padding-block:var(--space-5)}.section-heading{margin-bottom:var(--space-4)}.contact-controls{flex-direction:column;align-items:stretch}.contact-controls>div{min-width:0}.contact-controls select{max-width:none}footer{grid-template-columns:1fr}.legal{grid-column:auto}}
 @media(max-width:560px){.wrap{width:calc(100% - 32px)}.wordmark{font-size:17px}.services{grid-template-columns:1fr}.hero{gap:var(--space-4)}.hero h1 br{display:none}.actions{align-items:stretch;flex-direction:column;gap:var(--space-3)}.actions .text-link{align-self:flex-start}.location-detail,.closing{padding:var(--space-4)}.banner{border-radius:var(--radius-md)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* Identidad MLRM: logotipo vectorial con fondo transparente */
+.logo-link{display:flex;align-items:center;flex:0 1 335px;min-width:0}
+.logo-link img{display:block;width:100%;height:auto;max-height:94px;object-fit:contain;object-position:left center}
+@media(max-width:560px){.logo-link{flex-basis:220px}.logo-link img{max-height:68px}}
